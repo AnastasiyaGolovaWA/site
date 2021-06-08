@@ -1,12 +1,4 @@
 <style>
-  body {
-    background: hsl(251, 65%, 81%);
-    padding: 0px;
-    margin: 0px;
-    width: max-content;
-    height: max-content;
-  }
-
   h1 {
     color: #f33554;
     line-height: 47px;
@@ -33,80 +25,44 @@
     line-height: 47px;
     letter-spacing: 0.18em;
     text-align: left;
-
   }
 
-  .audio {
-    margin-left: 440px;
-    margin-top: 50px;
-  }
-
-  .ml-100 {
-    margin-left: 70px;
-  }
-
-  .cards-list {
-    z-index: 0;
-    width: 100%;
+  body {
+    background: hsl(251, 65%, 81%);
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .card {
-    margin: 30px auto;
-    width: 300px;
-    height: 300px;
-    border-radius: 40px;
-    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
-    cursor: pointer;
-    transition: 0.4s;
-    margin-left: 20px;
-  }
-
-  .card .card_image {
-    width: inherit;
-    height: inherit;
-    border-radius: 40px;
-  }
-
-  .card .card_image img {
-    width: inherit;
-    height: inherit;
-    border-radius: 40px;
-    object-fit: cover;
-  }
-
-  .card .card_title {
-    text-align: center;
-    border-radius: 0px 0px 40px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-family: sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: -80px;
-    height: 40px;
   }
 
-  .card:hover {
-    transform: scale(0.9, 0.9);
-    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
-      -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+  h1 {
+    color: coral;
   }
 
-  .title-white {
-    color: white;
+  .grid-container {
+    columns: 5 200px;
+    column-gap: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
   }
 
-  .title-black {
-    color: black;
+  .div {
+    width: 150px;
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 2px black;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: all .25s ease-in-out;
   }
 
-  @media all and (max-width: 500px) {
-    .card-list {
-      flex-direction: column;
-    }
-
-
+  img {
+    width: 100%;
+    border-radius: 5px;
+    transition: all .25s ease-in-out;
   }
 </style>
 <!DOCTYPE html>
@@ -114,7 +70,7 @@
 
 <head>
   <title>Заячий сайт</title>
- 
+
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
   <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" />
 </head>
@@ -123,78 +79,34 @@
   <div class="audio">
     <p align="center">С днём рождения мой зайка</p>
     <audio controls class="ml-100">
-      <source src="Record (online-voice-recorder.com) (1).mp3" type="audio/ogg; codecs=vorbis">
-      <source src="Record (online-voice-recorder.com) (1).mp3" type="audio/mpeg">
+      <source src="Record (online-voice-recorder.com) (1).mp3" type="audio/ogg; codecs=vorbis" />
+      <source src="Record (online-voice-recorder.com) (1).mp3" type="audio/mpeg" />
       Тег audio не поддерживается вашим браузером.
       <a href="Record (online-voice-recorder.com) (1).mp3">Скачайте музыку</a>.
     </audio>
   </div>
 
-
-  <div class="cards-list">
-
-    <div class="card 1">
-      <div class="card_image"> <img src="x7qe22YIlkg.jpg" /> </div>
-      <div class="card_title title-white">
-        <p>Самый любимый</p>
-      </div>
+  <h1>Заячья галерея</h1>
+  <div class="grid-container">
+    <div>
+      <img class="grid-item grid-item-1" src="bJFIyIwYeB8.jpg" alt="" />
+      <p>"Самый любимый"</p>
+    </div>
+    <div>
+      <img class="grid-item grid-item-2" src="e50YmnO7xwA.jpg" alt="" />
+      <p>"Самый кусь"</p>
+    </div>
+    <div>
+      <img class="grid-item grid-item-3" src="s5LrkSyz-sk.jpg" alt="" />
+      <p>"Самый зайка"</p>
+    </div>
+    <div>
+      <img class="grid-item grid-item-4"
+        src="khcWfdZINXY.jpg"
+        alt="" />
+      <p>"Самый милый"</p>
     </div>
 
-    <div class="card 2">
-      <div class="card_image">
-        <img src="s5LrkSyz-sk.jpg" />
-      </div>
-      <div class="card_title title-white">
-        <p>Самый зайка</p>
-      </div>
-    </div>
-
-    <div class="card 3">
-      <div class="card_image"> <img src="HCwV1j6wCv0.jpg" /> </div>
-      <div class="card_title title-white">
-        <p>Зайка (звонит в деконат)</p>
-      </div>
-    </div>
-
-    <div class="card 4">
-      <div class="card_image"> <img src="mf2dhTuNqS0.jpg" /> </div>
-      <div class="card_title title-white">
-      </div>
-    </div>
-
-  </div>
-
-
-  <div class="cards-list">
-
-    <div class="card 1">
-      <div class="card_image"> <img src="e50YmnO7xwA.jpg" /> </div>
-      <div class="card_title title-white">
-        <p>Самый кусь</p>
-      </div>
-    </div>
-
-    <div class="card 2">
-      <div class="card_image">
-        <img src="khcWfdZINXY.jpg" />
-      </div>
-      <div class="card_title title-white">
-        <p>Самый милый</p>
-      </div>
-    </div>
-    <div class="card 3">
-      <div class="card_image"> <img src="bJFIyIwYeB8.jpg" /> </div>
-      <div class="card_title title-white">
-      </div>
-    </div>
-
-    <div class="card 4">
-      <div class="card_image">
-        <img src="-3bp3tYY4Ec.jpg" />
-      </div>
-      <div class="card_title title-white">
-      </div>
-    </div>
   </div>
 
 </body>
