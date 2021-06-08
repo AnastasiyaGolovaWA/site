@@ -27,6 +27,11 @@
     text-align: left;
   }
 
+  .header {
+    font-size: 64px;
+    color: #ff284b;
+  }
+
   body {
     background: hsl(251, 65%, 81%);
     display: flex;
@@ -56,59 +61,98 @@
     padding: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    transition: all .25s ease-in-out;
+    transition: all 0.25s ease-in-out;
   }
 
   img {
     width: 100%;
     border-radius: 5px;
-    transition: all .25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .ml {
+    margin-left: 328px;
+    margin-bottom: 40px;
   }
 </style>
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Заячий сайт</title>
 
-<head>
-  <title>Заячий сайт</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
 
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
-  <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  <div class="audio">
-    <p align="center">С днём рождения мой зайка</p>
-    <audio controls class="ml-100">
-      <source src="Record (online-voice-recorder.com) (1).mp3" type="audio/ogg; codecs=vorbis" />
-      <source src="Record (online-voice-recorder.com) (1).mp3" type="audio/mpeg" />
-      Тег audio не поддерживается вашим браузером.
-      <a href="Record (online-voice-recorder.com) (1).mp3">Скачайте музыку</a>.
-    </audio>
-  </div>
-
-  <h1>Заячья галерея</h1>
-  <div class="grid-container">
-    <div>
-      <img class="grid-item grid-item-1" src="bJFIyIwYeB8.jpg" alt="" />
-      <p>"Самый любимый"</p>
+  <body>
+    <div class="audio">
+      <p class="header">С днём рождения мой зайка</p>
+      <audio controls class="ml">
+        <source
+          src="Record (online-voice-recorder.com) (1).mp3"
+          type="audio/ogg; codecs=vorbis"
+        />
+        <source
+          src="Record (online-voice-recorder.com) (1).mp3"
+          type="audio/mpeg"
+        />
+        Тег audio не поддерживается вашим браузером.
+        <a href="Record (online-voice-recorder.com) (1).mp3">Скачайте музыку</a
+        >.
+      </audio>
     </div>
-    <div>
-      <img class="grid-item grid-item-2" src="e50YmnO7xwA.jpg" alt="" />
-      <p>"Самый кусь"</p>
-    </div>
-    <div>
-      <img class="grid-item grid-item-3" src="s5LrkSyz-sk.jpg" alt="" />
-      <p>"Самый зайка"</p>
-    </div>
-    <div>
-      <img class="grid-item grid-item-4"
-        src="khcWfdZINXY.jpg"
-        alt="" />
-      <p>"Самый милый"</p>
-    </div>
+    <div class="grid-container">
+      <div>
+        <img class="grid-item grid-item-1" src="bJFIyIwYeB8.jpg" alt="" />
+        <p>"Самый любимый"</p>
+      </div>
+      <div>
+        <img class="grid-item grid-item-2" src="e50YmnO7xwA.jpg" alt="" />
+        <p>"Самый кусь"</p>
+      </div>
+      <div>
+        <img class="grid-item grid-item-3" src="s5LrkSyz-sk.jpg" alt="" />
+        <p>"Самый зайка"</p>
+      </div>
+      <div>
+        <img class="grid-item grid-item-4" src="khcWfdZINXY.jpg" alt="" />
+        <p>"Самый милый"</p>
+      </div>
 
-  </div>
+      <div>
+        <img class="grid-item grid-item-4" src="_uXP53ZOJPg.jpg" alt="" />
+        <p>💕💕💕</p>
+      </div>
 
-</body>
+      <div>
+        <img class="grid-item grid-item-4" src="-3bp3tYY4Ec.jpg" alt="" />
+      </div>
+      <div>
+        <img class="grid-item grid-item-4" src="mf2dhTuNqS0.jpg" alt="" />
+        <p>"Люблю тебя"</p>
+      </div>
 
+      <div>
+        <img class="grid-item grid-item-4" src="x7qe22YIlkg.jpg" alt="" />
+        <p>🥰🥰🥰</p>
+      </div>
+
+      <div>
+        <img class="grid-item grid-item-4" src="ZUuhHXfoMWM.jpg" alt="" />
+        <p>😘😘😘</p>
+      </div>
+
+      <div>
+        <img class="grid-item grid-item-4" src="yH5JIK4xmuA.jpg" alt="" />
+        <p>💖💖💖</p>
+      </div>
+    </div>
+  </body>
 </html>
