@@ -1,15 +1,50 @@
 <style>
   body {
-    background: url(phone.jpg);
+    background: hsl(251, 65%, 81%);
     padding: 0px;
     margin: 0px;
     width: max-content;
     height: max-content;
   }
+
+  h1 {
+    color: #f33554;
+    line-height: 47px;
+    letter-spacing: 0.18em;
+    font-family: Oswald;
+  }
+
+  a {
+    color: #a5a0bb;
+    font-size: 16px;
+    font-family: Oswald;
+    letter-spacing: -0.01em;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  p,
+  .styles {
+    font-family: Oswald;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0.18em;
+    text-align: left;
+
+  }
+
   .audio {
-      margin-left: 540px;
-      margin-top: 50px;
-    }
+    margin-left: 440px;
+    margin-top: 50px;
+  }
+
+  .ml-100 {
+    margin-left: 70px;
+  }
+
   .cards-list {
     z-index: 0;
     width: 100%;
@@ -79,12 +114,15 @@
 
 <head>
   <title>Заячий сайт</title>
+ 
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <div class="audio">
-    <p>С днём рождения мой зайка</p>
-    <audio controls>
+    <p align="center">С днём рождения мой зайка</p>
+    <audio controls class="ml-100">
       <source src="Record (online-voice-recorder.com) (1).mp3" type="audio/ogg; codecs=vorbis">
       <source src="Record (online-voice-recorder.com) (1).mp3" type="audio/mpeg">
       Тег audio не поддерживается вашим браузером.
